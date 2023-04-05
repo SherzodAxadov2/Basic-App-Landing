@@ -18,6 +18,9 @@ module.exports = {
         lightGray: "#F3F9FD",
         grayColor: "#71717A",
         cardText: "#505056",
+        inputPlaceholder: "#9D9DBD",
+        footerList: "#E4E4E7",
+        footerBorder: "#1E293B",
       },
       boxShadow: {
         cardShadow: "0px 0px 24px rgba(44, 41, 41, 0.1)",

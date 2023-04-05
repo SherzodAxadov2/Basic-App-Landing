@@ -14,3 +14,15 @@
 .roboto {
     font-family: 'Roboto', sans-serif;
 }
+
+@media(min-width:1440px) {
+    header, footer {
+        width: 100%;
+    }
+
+    nav, footer>div:last-child {
+        width: 1440px;
+        margin: auto;
+    }
+
+}

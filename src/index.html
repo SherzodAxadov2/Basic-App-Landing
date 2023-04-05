@@ -16,7 +16,9 @@
     <header class="bg-lightGray py-5 px-8 md:px-[50px] xl:px-[100px] xl:py-[30px]">
         <nav class="flex items-center justify-between">
             <div class="flex space-x-16 xl:space-x-28 items-center">
-                <img src="images/Logo.png" alt="logo" class="logo">
+                <a href="#demos">
+                    <img src="images/Logo.png" alt="logo" class="logo">
+                </a>
                 <ul class="hidden items-center space-x-8 xl:space-x-14 md:hidden lg:flex">
                     <li>
                         <a href="#demos" class="text-lg font-medium hover:text-lightBlue transition-all">Demos</a>
@@ -50,8 +52,8 @@
 
     <!-- Hero -->
     <section id="demos" class="bg-lightGray px-4 md:px-0 pb-16 md:pb-[100px] ">
-        <div class="container mx-auto flex items-center flex-col md:flex-row gap-12">
-            <div class="md:w-[60%] md:-ml-[10%]">
+        <div class="container mx-auto flex items-center flex-col md:flex-row md:gap-12">
+            <div>
                 <img src="images/Hero image.png" alt="img" class="w-full">
             </div>
             <div class="text-center md:text-left md:w-1/2 flex flex-col gap-6">
@@ -62,9 +64,16 @@
                     simple
                     to-do app. A mobile application
                     Budgeting for your personal life</p>
-                <div class="flex gap-11 mx-auto md:mx-0">
-                    <img src="images/google play.png" alt="img" class="cursor-pointer">
-                    <img src="images/app store.png" alt="img" class="cursor-pointer">
+                <div class=" flex flex-row md:flex-wrap lg:flex-nowrap gap-11 mx-auto md:mx-0">
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                        <img src="images/google play.png" alt="img"
+                            class="cursor-pointer hover:-translate-y-1 transition-all duration-300">
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                        <img src="images/app store.png" alt="img"
+                            class="cursor-pointer hover:-translate-y-1 transition-all duration-300">
+
+                    </a>
                 </div>
             </div>
         </div>
@@ -108,7 +117,9 @@
             <!-- Feature Card -->
             <ul class="flex flex-col md:justify-around lg:justify-between md:flex-row gap-8">
                 <li class="md:w-1/3 flex flex-col items-start space-y-6 p-6 shadow-cardShadow rounded-lg">
-                    <img src="icons/card-img1.png" alt="icon">
+                    <div class="w-[80px] h-[80px] rounded-full overflow-hidden cursor-pointer"><img
+                            src="icons/card-img1.png" alt="icon" class="hover:scale-110 transition-all duration-300">
+                    </div>
                     <h5 class="text-2xl font-medium text-headingColor">Innovative Solution</h5>
                     <p class="text-base text-paragraphColor">Amet minim mollit non deserunt ullamco est sit aliqua dolor
                         do amet sint. Velit
@@ -116,7 +127,9 @@
                         consequat duis enim velit mollit. </p>
                 </li>
                 <li class="md:w-1/3 flex flex-col items-start space-y-6 p-6 shadow-cardShadow rounded-lg">
-                    <img src="icons/card-img1.png" alt="icon">
+                    <div class="w-[80px] h-[80px] rounded-full overflow-hidden cursor-pointer"><img
+                            src="icons/card-img1.png" alt="icon" class="hover:scale-110 transition-all duration-300">
+                    </div>
                     <h5 class="text-2xl font-medium text-headingColor">Innovative Solution</h5>
                     <p class="text-base text-paragraphColor">Amet minim mollit non deserunt ullamco est sit aliqua dolor
                         do amet sint. Velit
@@ -124,7 +137,9 @@
                         consequat duis enim velit mollit. </p>
                 </li>
                 <li class="md:w-1/3 flex flex-col items-start space-y-6 p-6 shadow-cardShadow rounded-lg">
-                    <img src="icons/card-img1.png" alt="icon">
+                    <div class="w-[80px] h-[80px] rounded-full overflow-hidden cursor-pointer"><img
+                            src="icons/card-img1.png" alt="icon" class="hover:scale-110 transition-all duration-300">
+                    </div>
                     <h5 class="text-2xl font-medium text-headingColor">Innovative Solution</h5>
                     <p class="text-base text-paragraphColor">Amet minim mollit non deserunt ullamco est sit aliqua dolor
                         do amet sint. Velit
@@ -137,8 +152,8 @@
 
     <!-- Web Application -->
     <section class="w-full px-4 md:px-0 bg-headingColor pt-24 md:pt-52">
-        <div class="container mx-auto flex flex-col-reverse lg:flex-row gap-8 lg:gap-0">
-            <div class="lg:w-[70%] lg:-ml-[20%]">
+        <div class="container mx-auto flex items-end flex-col-reverse lg:flex-row gap-8 lg:gap-0">
+            <div class="lg:w-[70%] lg:-ml-[20%] xl:w-auto xl:-ml-0">
                 <img src="images/phone-bgBlue.png" alt="img" class="w-full">
             </div>
 
@@ -158,7 +173,7 @@
                         diam libero vitae erat.</p>
                 </div>
 
-                <ul class="flex flex-col lg:flex-row space-y-2 gap-6">
+                <ul class="flex flex-col lg:flex-row space-y-2 gap-6 mb-8">
                     <li class="flex gap-4 items-start">
                         <img src="icons/share.png" alt="icon">
                         <div class="flex flex-col gap-4">
@@ -188,13 +203,13 @@
 
     <!-- About -->
     <section id="about" class="w-full px-4 md:px-0 pt-20 md:pt-[120px] container sm:mx-auto">
-        <div class=" flex flex-col items-end xl:flex-row gap-10">
-            <div class="flex flex-col gap-10 mb-7 md:w-full md:mx-auto lg:w-[80%] z-10">
+        <div class=" flex flex-col items-end lg:flex-row">
+            <div class="flex flex-col gap-10 mb-7 md:w-full md:mx-auto lg:w-[55%] z-10">
                 <div class="flex flex-col gap-6">
-                    <h2 class="text-center text-4xl md:text-left font-bold md:text-5xl leading-[120%]">Keeping track of
+                    <!-- <h2 class="text-center text-4xl md:text-left font-bold md:text-5xl leading-[120%]">Keeping track of
                         your
                         expenses is made easy with this
-                        app</h2>
+                        app</h2> -->
                     <p class="text-base text-center md:text-left">Lorem ipsum dolor sit amet, consectetur adipiscing
                         elit. Suspendisse varius
                         enim in eros
@@ -248,7 +263,7 @@
                 </button>
             </div>
 
-            <div class=" w-full md:mx-auto lg:w-[100%] xl:-ml-[10%] ">
+            <div class="flex-1">
                 <img src="images/about-img.png" alt="img" class="w-full">
             </div>
         </div>
@@ -269,8 +284,7 @@
                         elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut .</p>
                 </div>
 
-                <ul
-                    class="flex flex-col justify-between md:flex-row md:justify-around md:flex-wrap xl:flex-nowrap gap-8">
+                <ul class="flex flex-col md:flex-row md:justify-between xl:flex-nowrap gap-8">
                     <li class="flex  flex-col gap-10 border rounded-md bg-white shadow-cardShadow p-8">
                         <div class="flex flex-col gap-8">
                             <div class="flex flex-col gap-5 mt-[46px] pb-[30px] border-b border-b-borderColor">
@@ -279,7 +293,7 @@
                                     <p class="text-base text-grayColor">/ month</p>
                                 </div>
 
-                                <p class="text-base text-paragraphColor mr-10">All the basic features to boost <br> your
+                                <p class="text-base text-paragraphColor 0">All the basic features to boost <br> your
                                     freelance career</p>
                             </div>
 
@@ -310,12 +324,9 @@
                             </ul>
                         </div>
 
-                        <button class="text-left block mb-4">
-                            <a href="#contact"
-                                class="border border-lightBlue rounded hover:bg-lightBlue text-lightBlue hover:text-white transition-all text-base py-4 px-16">Live
-                                Chat
-                                Support</a>
-                        </button>
+                        <a href="#contact" class="border border-lightBlue rounded hover:bg-lightBlue
+                                 text-lightBlue hover:text-white transition-all text-base py-4
+                                   text-center">Live Chat Support</a>
                     </li>
                     <li class="flex  flex-col gap-10 border rounded-md bg-white shadow-cardShadow p-8">
                         <div class="flex flex-col gap-8">
@@ -325,7 +336,7 @@
                                     <p class="text-base text-grayColor">/ month</p>
                                 </div>
 
-                                <p class="text-base text-paragraphColor mr-10">All the basic features to boost <br> your
+                                <p class="text-base text-paragraphColor 0">All the basic features to boost <br> your
                                     freelance career</p>
                             </div>
 
@@ -356,12 +367,10 @@
                             </ul>
                         </div>
 
-                        <button class="text-left block mb-4">
-                            <a href="#contact"
-                                class="border border-lightBlue bg-lightBlue rounded hover:bg-white text-white hover:text-lightBlue transition-all text-base py-4 px-16">Live
-                                Chat
-                                Support</a>
-                        </button>
+                        <a href="#contact"
+                            class="text-center border border-lightBlue bg-lightBlue rounded hover:bg-white text-white hover:text-lightBlue transition-all text-base py-4">Live
+                            Chat
+                            Support</a>
                     </li>
                     <li class="flex  flex-col gap-10 border rounded-md bg-white shadow-cardShadow p-8">
                         <div class="flex flex-col gap-8">
@@ -371,7 +380,7 @@
                                     <p class="text-base text-grayColor">/ month</p>
                                 </div>
 
-                                <p class="text-base text-paragraphColor mr-10">All the basic features to boost <br> your
+                                <p class="text-base text-paragraphColor 0">All the basic features to boost <br> your
                                     freelance career</p>
                             </div>
 
@@ -402,26 +411,309 @@
                             </ul>
                         </div>
 
-                        <button class="text-left block mb-4">
-                            <a href="#contact"
-                                class="border border-lightBlue rounded hover:bg-lightBlue text-lightBlue hover:text-white transition-all text-base py-4 px-16">Live
-                                Chat
-                                Support</a>
-                        </button>
+                        <a href="#contact"
+                            class="border border-lightBlue rounded hover:bg-lightBlue text-lightBlue hover:text-white transition-all text-base py-4 text-center">Live
+                            Chat
+                            Support</a>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Conttact -->
-    <section id="contact" class="w-full px-4 md:px-0  py-20 md:py-[100px]">
-        <div class="container flex flex-col gap-14 md:gap-20">
-            <div class="flex flex-col gap-6">
-
+    <!-- Testimonials -->
+    <section id="testimonial" class="w-full px-4 md:px-0  py-20 md:py-[100px]">
+        <div class="container mx-auto flex flex-col gap-14 md:gap-20">
+            <div class="w-full flex flex-col gap-6">
+                <h2 class="text-center text-4xl font-bold md:text-5xl leading-[120%] text-headingColor">Customer
+                    testimonials</h2>
+                <p class="text-base text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
+
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <li
+                    class="bg-white rounded shadow-cardShadow p-8 flex flex-col gap-6 cursor-pointer border hover:border-lightBlue transition-all duration-300">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                    </div>
+                    <p class="text-base text-paragraphColor">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in
+                        eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                    <div class="flex flex-row items-center gap-5">
+                        <img src="images/Avatar Image-0.png" alt="img">
+                        <div>
+                            <h6 class="text-base text-headingColor font-medium">Bessie Cooper</h6>
+                            <p class="text-base text-paragraphColor">Position, Company name</p>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="bg-white rounded shadow-cardShadow p-8 flex flex-col gap-6 cursor-pointer border border-lightBlue transition-all duration-300">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                    </div>
+                    <p class="text-base text-paragraphColor">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in
+                        eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                    <div class="flex flex-row items-center gap-5">
+                        <img src="images/Avatar Image.png" alt="img">
+                        <div>
+                            <h6 class="text-base text-headingColor font-medium">Ronald Richards</h6>
+                            <p class="text-base text-paragraphColor">Position, Company name</p>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="bg-white rounded shadow-cardShadow p-8 flex flex-col gap-6 cursor-pointer border hover:border-lightBlue transition-all duration-300">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                    </div>
+                    <p class="text-base text-paragraphColor">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in
+                        eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                    <div class="flex flex-row items-center gap-5">
+                        <img src="images/Avatar Image-1.png" alt="img">
+                        <div>
+                            <h6 class="text-base text-headingColor font-medium">Robert Fox</h6>
+                            <p class="text-base text-paragraphColor">Position, Company name</p>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="bg-white rounded shadow-cardShadow p-8 flex flex-col gap-6 cursor-pointer border hover:border-lightBlue transition-all duration-300">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                    </div>
+                    <p class="text-base text-paragraphColor">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in
+                        eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                    <div class="flex flex-row items-center gap-5">
+                        <img src="images/Avatar Image-2.png" alt="img">
+                        <div>
+                            <h6 class="text-base text-headingColor font-medium">Marvin McKinney</h6>
+                            <p class="text-base text-paragraphColor">Position, Company name</p>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="bg-white rounded shadow-cardShadow p-8 flex flex-col gap-6 cursor-pointer border hover:border-lightBlue transition-all duration-300">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                    </div>
+                    <p class="text-base text-paragraphColor">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in
+                        eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                    <div class="flex flex-row items-center gap-5">
+                        <img src="images/Avatar Image-3.png" alt="img">
+                        <div>
+                            <h6 class="text-base text-headingColor font-medium">Esther Howard</h6>
+                            <p class="text-base text-paragraphColor">Position, Company name</p>
+                        </div>
+                    </div>
+                </li>
+                <li
+                    class="bg-white rounded shadow-cardShadow p-8 flex flex-col gap-6 cursor-pointer border hover:border-lightBlue transition-all duration-300">
+                    <div class="flex flex-row items-center gap-1">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                        <img src="icons/star.png" alt="star" class="block ">
+                    </div>
+                    <p class="text-base text-paragraphColor">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in
+                        eros elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra."</p>
+                    <div class="flex flex-row items-center gap-5">
+                        <img src="images/Avatar Image-4.png" alt="img">
+                        <div>
+                            <h6 class="text-base text-headingColor font-medium">Jerome Bell</h6>
+                            <p class="text-base text-paragraphColor">Position, Company name</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
+
+    <!-- Contact -->
+    <section id="contact" class="w-full bg-lightBlue px-4 md:px-0 py-[100px] md:py-[150px]">
+        <div class="container mx-auto flex flex-col gap-8">
+            <h1 class="font-bold text-center text-white text-5xl md:text-[64px] leading-[120%]">Download our app for
+                free</h1>
+            <p class="text-center text-white text-[21px] leading-[155%]">Lorem ipsum dolor sit amet,
+                consectetur
+                adipiscing elit.
+                Suspendisse varius enim in
+                eros
+                elementum tristique. Duis cursus, mi quis viverra ornare duis cursus, mi quis viverra.</p>
+            <form class="mx-auto">
+                <div class="w-full flex flow-row gap-5 my-[21px]">
+                    <input type="text"
+                        class="flex-1 p-4 bg-white outline-0 border-2 border-white focus:border-blue-700 rounded text-base text-inputPlaceholder"
+                        placeholder="Enter your email">
+                    <button type="submit">
+                        <a href="#demos"
+                            class="py-[18px] px-7 bg-yellow text-base text-white rounded hover:bg-slate-400 transition-all duration-300">Download
+                            App</a>
+                    </button>
+                </div>
+                <p class="text-base text-white">By clicking Sign Up you're confirming that you agree with our <a
+                        href="#contact" class="underline">Terms and Conditions.</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-headingColor px-4 md:px-0">
+        <div class="container mx-auto py-20 md:py-[125px]">
+            <ul class="grid mx-auto grid-cols-1 gap-y-8 justify-between sm:grid-cols-2 lg:grid-cols-4">
+                <li class="flex flex-col gap-8">
+                    <h6 class="text-white font-medium text-lg">Company</h6>
+                    <ul class="flex flex-col gap-5">
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px] hover:text-white transition-all">About</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px] hover:text-white transition-all">Features</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px] hover:text-white transition-all">Works</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px] hover:text-white transition-all">Career</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex flex-col gap-8">
+                    <h6 class="text-white font-medium text-lg">Help</h6>
+                    <ul class="flex flex-col gap-5">
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Customer
+                                Support</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Delivery
+                                Details</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Terms
+                                &
+                                Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Privacy
+                                Policy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex flex-col gap-8">
+                    <h6 class="text-white font-medium text-lg">Resources</h6>
+                    <ul class="flex flex-col gap-5">
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Free
+                                eBooks</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Development
+                                Tutorial</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">How to
+                                -
+                                Blog</a>
+                        </li>
+                        <li>
+                            <a href="#demos"
+                                class="text-base text-footerList leading-[26px]  hover:text-white transition-all">Youtube
+                                Playlist</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="flex flex-col gap-8">
+                    <h6 class="text-white font-medium text-lg">Install App</h6>
+                    <ul class="flex flex-col gap-[13px]">
+                        <li class="cursor-pointer">
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                                <img src="images/google play.png" alt="img"
+                                    class="w-[140px] md:w-auto cursor-pointer hover:-translate-y-1 transition-all duration-300">
+                            </a>
+                        </li>
+                        <li class="cursor-pointer">
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                                <img src="images/app store.png" alt="img"
+                                    class="w-[140px] md:w-auto cursor-pointer hover:-translate-y-1 transition-all duration-300">
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div
+            class="flex border-t border-t-footerBorder flex-col-reverse gap-6 items-center justify-center md:justify-between md:flex-row py-11 mx-8 md:mx-[50px] xl:mx-[100px]">
+            <p class="text-center md:text-left text-gray-400 text-base leading-[26px]">© Copyright 2022, Made with 💖 by
+                Airdokan and Powered by
+                Webflow
+            </p>
+            <ul class="flex flex-row gap-[14px]">
+                <li class="w-[34px] h-[34px] rounded-full bg-footerBorder flex items-center 
+                    justify-center cursor-pointer hover:bg-lightBlue hover:-translate-y-1 transition-all duration-300">
+                    <a href="https://twitter.com/">
+                        <i class="fa-brands fa-twitter text-white"></i>
+                    </a>
+                </li>
+                <li class="w-[34px] h-[34px] rounded-full bg-footerBorder flex items-center 
+                    justify-center cursor-pointer hover:bg-lightBlue hover:-translate-y-1 transition-all duration-300">
+                    <a href="https://facebook.com/">
+                        <i class="fa-brands fa-facebook-f text-white"></i>
+                    </a>
+                </li>
+                <li class="w-[34px] h-[34px] rounded-full bg-footerBorder flex items-center 
+                    justify-center cursor-pointer hover:bg-lightBlue hover:-translate-y-1 transition-all duration-300">
+                    <a href="https://instagram.com/">
+                        <i class="fa-brands fa-instagram text-white"></i>
+                    </a>
+                </li>
+                <li class="w-[34px] h-[34px] rounded-full bg-footerBorder flex items-center 
+                    justify-center cursor-pointer hover:bg-lightBlue hover:-translate-y-1 transition-all duration-300">
+                    <a href="https://github.com/">
+                        <i class="fa-brands fa-github text-white"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
